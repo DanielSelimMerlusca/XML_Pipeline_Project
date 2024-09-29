@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="rss_transform.xsl"?>
+<RSSFeed>
+   <channel>
+      <title>Caregiver Support Events and Resources</title>
+      <link>https://www.careplatform.com/rss</link>
+      <description>Updates on caregiver workshops, support groups, and resources.</description>
+      <language>en-us</language>
+
+      <item>
+         <title>Yoga for Stress Relief Workshop</title>
+         <description>This workshop will help caregivers relieve stress through yoga, tailored for their unique needs.</description>
+         <link>https://www.careplatform.com/events/yoga-for-caregivers</link>
+         <pubDate>Wed, 22 Oct 2024 09:00:00 +0000</pubDate>
+         <location>Yoga Health Organization, Springfield, IL</location>
+         <provider>Yoga Health Organization</provider>
+      </item>
+
+      <item>
+         <title>Caregiver Support Group for Mobility Assistance</title>
+         <description>Join a peer-led support group to exchange tips on helping patients with reduced mobility.</description>
+         <link>https://www.careplatform.com/events/mobility-support-group</link>
+         <pubDate>Mon, 27 Oct 2024 10:00:00 +0000</pubDate>
+         <location>Swim Therapy Association, Springfield, IL</location>
+         <provider>Swim Therapy Association</provider>
+      </item>
+
+      <item>
+         <title>Art Therapy Techniques for Caregivers</title>
+         <description>Explore art therapy techniques that can help reduce caregiver burnout and promote relaxation.</description>
+         <link>https://www.careplatform.com/events/art-therapy-for-caregivers</link>
+         <pubDate>Tue, 28 Oct 2024 14:00:00 +0000</pubDate>
+         <location>Art Therapy Institute, Springfield, IL</location>
+         <provider>Art Therapy Institute</provider>
+      </item>
+
+      <item>
+         <title>Palliative Care Best Practices Workshop</title>
+         <description>This workshop focuses on best practices for caregivers dealing with patients in palliative care.</description>
+         <link>https://www.careplatform.com/events/palliative-care-workshop</link>
+         <pubDate>Fri, 31 Oct 2024 09:00:00 +0000</pubDate>
+         <location>Palliative Care Institute, Springfield, IL</location>
+         <provider>Palliative Care Association</provider>
+      </item>
+
+      <item>
+         <title>Nutrition and Meal Planning for Caregivers</title>
+         <description>Learn how to prepare nutritious meals tailored to the needs of your patients.</description>
+         <link>https://www.careplatform.com/events/nutrition-workshop</link>
+         <pubDate>Thu, 03 Nov 2024 11:00:00 +0000</pubDate>
+         <location>Nutrition &amp; Wellness Center, Springfield, IL</location>
+         <provider>Nutrition for Caregivers Group</provider>
+      </item>
+   </channel>
+</RSSFeed>
