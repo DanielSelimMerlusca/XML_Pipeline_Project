@@ -1,4 +1,5 @@
 XML Care Platform Project
+
 This project models and exploits an XML database for a collaborative platform focused on providing social and medical care services for elderly and disabled individuals. The platform manages participants, service providers, and a variety of services and activities. The main goal is to automate and streamline service recommendations and generate reports that are accessible in different formats like HTML, XML, and JSON.
 
 Project Structure and Scenarios
