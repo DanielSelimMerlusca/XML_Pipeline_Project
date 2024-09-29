@@ -8,9 +8,41 @@
         <xs:element name="Services" type="ServicesType" maxOccurs="unbounded"/>
         <xs:element name="ServiceProviders" type="ServiceProvidersType" maxOccurs="unbounded"/>
         <xs:element name="Participation" type="ParticipationType" maxOccurs="unbounded"/>
+        <!-- RSS Feed inside CarePlatform -->
+        <xs:element name="RSSFeed" type="RSSFeedType" minOccurs="0" maxOccurs="1"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+  <!-- RSSFeed definition -->
+  <xs:complexType name="RSSFeedType">
+    <xs:sequence>
+      <xs:element name="channel" type="ChannelType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Channel definition -->
+  <xs:complexType name="ChannelType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string"/>
+      <xs:element name="link" type="xs:string"/>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="language" type="xs:string"/>
+      <xs:element name="item" type="ItemType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Item definition (for RSS events) -->
+  <xs:complexType name="ItemType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string"/>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="link" type="xs:string"/>
+      <xs:element name="pubDate" type="xs:string"/>
+      <xs:element name="location" type="xs:string"/>
+      <xs:element name="provider" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
 
   <!-- People needing assistance -->
   <xs:complexType name="PeopleNeedingAssistanceType">
@@ -53,7 +85,7 @@
   </xs:complexType>
 
   <!-- Services and activities -->
-   <xs:complexType name="ServicesType">
+  <xs:complexType name="ServicesType">
     <xs:sequence>
       <xs:element name="Service" type="ServiceType" maxOccurs="unbounded"/>
     </xs:sequence>
@@ -84,7 +116,7 @@
       <xs:element name="Time" type="xs:string"/>
       <xs:element name="Frequency" type="xs:string"/>
     </xs:sequence>
-</xs:complexType>
+  </xs:complexType>
 
   <!-- Location Type -->
   <xs:complexType name="LocationType">
@@ -93,13 +125,13 @@
       <xs:element name="Room" type="xs:string" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
-  
+
   <!-- Staff Type -->
   <xs:complexType name="StaffType">
     <xs:sequence>
       <xs:element name="Instructor" type="StaffMemberType" minOccurs="0" maxOccurs="unbounded"/>
       <xs:element name="Assistant" type="StaffMemberType" minOccurs="0" maxOccurs="unbounded"/>
-	  <xs:element name="Facilitator" type="StaffMemberType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Facilitator" type="StaffMemberType" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
 
@@ -145,3 +177,4 @@
   </xs:complexType>
 
 </xs:schema>
+
